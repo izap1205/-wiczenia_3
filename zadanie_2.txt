@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zadania
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int n;
+            int i = 0;
+            n = int.Parse(Console.ReadLine());
+            int sum = 0;
+            
+            while(i < n)
+            {
+                sum += i;
+                i++;
+                Console.WriteLine("i = " + i + "    " + "s = " + sum);
+            }
+
+            Console.WriteLine("suma = " + (i + sum));
+
+            Console.ReadKey();
+        }
+    }
+}

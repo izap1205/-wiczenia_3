@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zadania
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+            Console.WriteLine("Podaj liczbę całkowitą");
+            a = int.Parse(Console.ReadLine());
+            int i = 1;
+            do
+            {
+                if(a % i == 0)
+                {
+                    Console.WriteLine(i);
+                    Console.WriteLine(a/i);
+                }
+
+                i++;
+            } while (i <= Math.Sqrt(a));
+
+            Console.ReadKey();
+        }
+    }
+}

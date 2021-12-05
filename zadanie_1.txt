@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zadania
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int sum = 0;
+            int a;
+            int b = 1;
+            a = int.Parse(Console.ReadLine());
+            
+
+            while(sum <= 100)
+            {
+                sum += a;
+                a = int.Parse(Console.ReadLine());
+                b++;
+            }
+
+            sum += a;
+
+            Console.WriteLine("Suma wynosi: "+ sum + " Dodałeś " + b + " liczb");
+
+            Console.ReadKey();
+
+        }
+    }
+}

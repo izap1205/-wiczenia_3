@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zadania
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int a;
+            int b;
+            a = int.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+            double a2 = Convert.ToDouble(a);
+            double b2 = Convert.ToDouble(b);
+            double result = 0;
+            
+            while(a > 0 && b > 0)
+            {
+                result = Math.Pow(a2, b2);
+                break;
+            }
+           
+            Console.WriteLine(result);
+            Console.ReadKey();
+        }
+    }
+}

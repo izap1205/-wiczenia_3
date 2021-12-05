@@ -1,0 +1,53 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zadania
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            start:
+
+            int a;
+            int b = 1;
+            int number = 209;
+            Console.WriteLine("Podaj liczbę między 1 a 1000, zgadniesz co to za liczba?");
+            a = int.Parse(Console.ReadLine());
+
+            if(a >= 1 && a <= 1000)
+            {
+                do
+                {
+                    if (a < 209)
+                    {
+                        Console.WriteLine(a);
+                        Console.WriteLine("Twoja liczba jest za mała! Spróbuj jeszcze raz :)");
+                        a = int.Parse(Console.ReadLine());
+                    }
+                    else
+                    {
+                        Console.WriteLine(a);
+                        Console.WriteLine("Twoja liczba jest za duża! Spróbuj jeszcze raz :)");
+                        a = int.Parse(Console.ReadLine());
+                    }
+
+                    b++;
+                } while (a != number);
+
+                Console.WriteLine(a);
+                Console.WriteLine("Brawo trafiłeś! " + "Liczba prób wynosi: " + b);
+            } else
+            {
+                Console.WriteLine("Podana przez ciebe liczba nie znajduje się w przedziale od 1 do 1000. Spróbuj jeszcze raz");
+                Console.WriteLine();
+                goto start;
+            }
+
+            Console.ReadKey();
+        }
+    }
+}

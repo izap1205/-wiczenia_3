@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Zadania
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 1;
+            int b = 0;
+            int sum = 0;
+
+            while(sum <= 100)
+            {
+                sum += a;
+                a++;
+                b++;
+            }
+
+            Console.WriteLine("Aby uzyskać liczbę 100 albo większą należy dodać " + b + " liczb poczynając od 1");
+            Console.ReadKey();
+        }
+    }
+}
